@@ -14,7 +14,13 @@
 {{- with $ShareButtons }}{{ $custom = true }}{{ end }}
 
 <div class="share-buttons">
+<<<<<<< HEAD
     {{- if (cond ($custom) (in $ShareButtons "twitter") (true)) }}
+=======
+    <a>
+        Share this post with your friends!
+    </a>
+>>>>>>> a6790e46 (added about.html projects.html files in layouts dir; updated share_icons.html)
     <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on twitter"
         href="https://twitter.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{- $.Scratch.Get "tags" -}}">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
